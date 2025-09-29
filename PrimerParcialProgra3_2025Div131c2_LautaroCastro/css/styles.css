@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(237,237,237); 
+}
+
+.card-producto{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.card-producto img{
+    width: 80%;
+}
+
+#barraBusqueda{
+    background-color: rgb(216, 221, 218); 
+}
+
+#listadoProductos{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 192px));
+    column-gap: 6rem; /* Equivale a 224px */
+    padding: 1.25rem 0.25rem 0.25rem 8.25rem;
+    margin: 1rem; /* Equivale a 16px */
+}
+
+
+#barraBusqueda{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#elementos li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem 0; /* 8px */
+}
+
+#precioTotalCarrito{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem 0; /* 8px */
+}
+
+#botones-ordenar {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#botones-ordenar button {
+  background-color: #3498db;   /* azul agradable */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.botones-ordenar button:hover {
+  background-color: #2980b9;   /* azul más oscuro */
+  transform: scale(1.05);
+}
